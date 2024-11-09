@@ -1,14 +1,15 @@
 package com.example.reactiontime;
+
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import androidx.appcompat.app.AppCompatActivity;
-import java.util.Random;
 
-import kotlin.Suppress;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Random;
 
 @SuppressLint("All")
 public class MainActivity extends AppCompatActivity {
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         startButton.setVisibility(View.GONE);
         resultText.setText("Wait for the prompt...");
 
-        int randomDelay = new Random().nextInt(2000) + 1000; // Between 1-3 seconds
+        int randomDelay = new Random().nextInt(3000) + 2000;
 
         handler.postDelayed(() -> {
             startTime = System.currentTimeMillis();
