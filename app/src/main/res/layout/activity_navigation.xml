@@ -92,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="16dp"
-                android:text="Developed by Sagor Chandro Howlader"
+                android:text="Developed by Sagor Chandra Howlader"
                 android:textColor="?colorOnPrimary" />
         </LinearLayout>
     </LinearLayout>
