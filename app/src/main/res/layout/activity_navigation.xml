@@ -1,18 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NavigationActivity"
+    android:background="?colorPrimaryVariant"
     tools:ignore="all">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="?colorPrimary"
+            android:elevation="6dp"
+            android:gravity="center"
+            android:paddingHorizontal="32dp"
+            android:text="Response Time Games"
+            android:textColor="?colorOnPrimary"
+            android:textSize="20dp" />
+
         <LinearLayout
+            android:id="@+id/easyTestLL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -27,7 +41,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/baseline_emoji_objects_24"
-                android:tint="?colorPrimary" />
+                android:tint="?colorOnPrimary" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -35,12 +49,13 @@
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="Easy Test"
-                android:textColor="?colorPrimary"
+                android:textColor="?colorOnPrimary"
                 android:textSize="32dp"
                 android:textStyle="bold" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/hardTestLL"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -55,7 +70,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/baseline_emoji_symbols_24"
-                android:tint="?colorPrimary" />
+                android:tint="?colorOnPrimary" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -63,10 +78,23 @@
                 android:gravity="center"
                 android:padding="16dp"
                 android:text="Hard Test"
-                android:textColor="?colorPrimary"
+                android:textColor="?colorOnPrimary"
                 android:textSize="32dp"
                 android:textStyle="bold" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Developed by Sagor Chandro Howlader"
+                android:textColor="?colorOnPrimary" />
+        </LinearLayout>
     </LinearLayout>
 
-</ScrollView>
+</RelativeLayout>

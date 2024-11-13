@@ -3,6 +3,8 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:padding="16dp"
+    android:id="@+id/mainView"
+    android:background="?colorPrimaryVariant"
     tools:ignore="all">
 
     <View
