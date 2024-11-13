@@ -13,6 +13,7 @@
         android:id="@+id/gameMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:layout_centerInParent="true">
 
         <Button
@@ -20,6 +21,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:backgroundTint="?colorPrimary"
+            android:elevation="12dp"
+            android:textColor="?colorOnPrimary"
             android:text="Start Test" />
 
         <TextView
@@ -38,6 +42,7 @@
         android:id="@+id/gamePlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="gone"
         android:layout_centerInParent="true">
 
         <TextView
