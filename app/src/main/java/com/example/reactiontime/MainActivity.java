@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         startButton = findViewById(R.id.startButton);
         reactionButton = findViewById(R.id.reactionButton);
         resultText = findViewById(R.id.resultText);
